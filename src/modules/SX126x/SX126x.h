@@ -1,5 +1,6 @@
 #if !defined(_RADIOLIB_SX126X_H)
 #define _RADIOLIB_SX126X_H
+#define RADIOLIB_GODMODE
 
 #include "../../TypeDef.h"
 
