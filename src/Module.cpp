@@ -1,6 +1,8 @@
 #include "Module.h"
 
 #if defined(RADIOLIB_BUILD_ARDUINO)
+#define RADIOLIB_TONE_UNSUPPORTED
+
 
 // we need this to emulate tone() on mbed Arduino boards
 #if defined(RADIOLIB_MBED_TONE_OVERRIDE)
