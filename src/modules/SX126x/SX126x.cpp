@@ -159,9 +159,9 @@ int16_t SX126x::beginFSK(float br, float freqDev, float rxBw, uint16_t preambleL
 int16_t SX126x::reset(bool verify) {
   // run the reset sequence
   _mod->pinMode(_mod->getRst(), OUTPUT);
-  _mod->digitalWrite(_mod->getRst(), LOW);
-  _mod->delay(1);
   _mod->digitalWrite(_mod->getRst(), HIGH);
+  _mod->delay(1);
+  _mod->digitalWrite(_mod->getRst(), LOW);
 
   // return immediately when verification is disabled
   if(!verify) {
